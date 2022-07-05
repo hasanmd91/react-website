@@ -1,0 +1,9 @@
+.home {
+  position: relative;
+  z-index: 2;
+  font-size: 3rem;
+}
+
+h1 {
+  color: white;
+}

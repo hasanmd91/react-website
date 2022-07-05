@@ -1,8 +1,9 @@
 .Navbar_container {
-  height: 80px;
+  height: 55px;
   background-color: #313136;
-  position: relative;
   display: flex;
+  position: sticky;
+  z-index: 1;
 }
 
 nav .active {
@@ -58,16 +59,16 @@ nav .active {
     justify-content: center;
     width: 100%;
     position: absolute;
-    top: 80px;
+    top: 55px;
     left: -110%;
     opacity: 1;
     transition: all 0.5s ease;
+    height: 300px;
   }
 
   .navlink {
-    border-bottom: 1px solid #f1eaea;
-    padding: 20px 0px;
-    margin: 0px;
+    padding: 15px 0px;
+    margin: 1px;
   }
   .active.navbar_menu-container {
     left: 0px;
@@ -79,6 +80,6 @@ nav .active {
     display: block;
     cursor: pointer;
     padding: 20px 20px;
-    color: rgb(17, 128, 224);
+    color: aliceblue;
   }
 }
