@@ -1,13 +1,12 @@
 .Navbar_container {
   height: 55px;
-  background-color: #313136;
   display: flex;
   position: sticky;
   z-index: 1;
 }
 
 nav .active {
-  color: orange;
+  color: var(--main-lightgreen-color);
 }
 
 .navbar_icon_container {
@@ -16,25 +15,28 @@ nav .active {
   width: 100%;
   height: inherit;
   padding: 0px 20px;
+  margin-left: 3rem;
+  margin-top: 10px;
 }
 
 .navbar_icon {
-  color: rgb(239, 239, 240);
+  color: var(--main-green-color);
 }
 
 .navbar_icon:hover {
-  color: orange;
+  color: var(--main-green-color);
 }
 
 .navbar_menu-container {
   display: flex;
   padding: 0px 20px;
   align-items: center;
-  margin-right: 20px;
+  margin-right: 40px;
+  margin-top: 10px;
 }
 
 .navlink {
-  color: aliceblue;
+  color: var(--main-green-color);
   padding: 15px;
   text-decoration: none;
   font-size: large;
@@ -42,7 +44,7 @@ nav .active {
 }
 
 .navlink:hover {
-  color: orange;
+  color: var(--main-lightgreen-color);
   transition: all 0.5s ease;
   cursor: pointer;
 }
@@ -72,14 +74,13 @@ nav .active {
   }
   .active.navbar_menu-container {
     left: 0px;
-    background-color: #313136;
-    opacity: 1;
+    background-color: var(--main-bg-color);
   }
 
   .navbar_humburger {
     display: block;
     cursor: pointer;
     padding: 20px 20px;
-    color: aliceblue;
+    color: var(--main-green-color);
   }
 }

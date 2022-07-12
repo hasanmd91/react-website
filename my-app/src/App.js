@@ -21,13 +21,13 @@ const App = () => {
   const renderParticalsInHome = location.pathname === "/";
 
   return (
-    <div>
+    <div className="App">
       {renderParticalsInHome && (
         <Particles id="particles" options={particles} init={handelinit} />
       )}
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" exact element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/contact" element={<Contact />} />
