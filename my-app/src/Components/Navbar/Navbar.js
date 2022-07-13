@@ -28,8 +28,8 @@ const Navbar = () => {
         <NavLink to="/about" className="navlink">
           About{" "}
         </NavLink>
-        <NavLink to="/blogs" className="navlink">
-          Blogs{" "}
+        <NavLink to="/projects" className="navlink">
+          Projects{" "}
         </NavLink>
         <NavLink to="/contact" className="navlink">
           Contact{" "}

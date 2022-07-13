@@ -4,10 +4,10 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
 import "./App.css";
-import Home from "./Components/Home/Home";
-import About from "./Components/About";
-import Blogs from "./Components/Blogs";
-import Contact from "./Components/Contact";
+import Home from "./Components/pages/Home/Home";
+import About from "./Components/pages/About/About";
+import Projects from "./Components/pages/Projects/Projects";
+import Contact from "./Components/pages/Contact/Contact";
 import Navbar from "./Components/Navbar/Navbar";
 import particles from "./Utils/Particles.json";
 
@@ -26,10 +26,11 @@ const App = () => {
         <Particles id="particles" options={particles} init={handelinit} />
       )}
       <Navbar />
+
       <Routes>
-        <Route path="/" exact element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>

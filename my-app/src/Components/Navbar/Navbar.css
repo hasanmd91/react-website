@@ -1,8 +1,9 @@
 .Navbar_container {
   height: 55px;
   display: flex;
+  width: 100%;
   position: sticky;
-  z-index: 1;
+  z-index: 1000;
 }
 
 nav .active {

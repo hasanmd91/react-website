@@ -1,0 +1,6 @@
+.about-container {
+  min-height: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+}
